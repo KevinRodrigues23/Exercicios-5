@@ -1,0 +1,16 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-4" *ngFor="let img of myImagem; index as i">
+            <div class="card shadow mt-5" style="width: 18rem;" *ngIf="i%2== 0">
+                <img class="card-img-top" [src]="img.imagem" width="300px" height="400px" alt="Imagem de capa do card">
+            <div class="card-body">
+                <h5 class="card-title">{{img.titulo}} index: {{i}}</h5>          
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary"(click)="clicar()">Clicar</button>
+  </div>
